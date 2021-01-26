@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram-bootstrap</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <!-- main navigation-->
+            <nav class="navbar navbar-light bg-transparent d-flex justify-content-between">
+                <div class="left">
+                    <i class="fab fa-instagram"></i>
+                    <h1 class="brand">Instagram</h1>
+                </div>
+                
+                <div class="right dropdown">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPost">
+                        Create a new post
+                    </button>
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+            <!-- pill tabs -->
+            <div class="d-flex justify-content-center p-3 white-bg">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-th"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                            <i class="fas fa-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- tabs section -->
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="https://cdn.theatlantic.com/assets/media/img/photo/2020/03/photos-national-puppy-day-2020/p01_1490227862-1/original.jpg" class="card-img-top" alt="">
+                        </div>
+
+                        <div class="card">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54e8ba93e4b07c3f655b452e/1577956632296-QFYZZXB2HAQQQZML2J1E/ke17ZwdGBToddI8pDm48kFyD7pzB8zoMIVY5aiUuFlp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0jG2lbcDYBOeMi4OFSYem8DMb5PTLoEDdB05UqhYu-xbnSznFxIRsaAU-3g5IaylIg/D-013.jpg" class="card-img-top" alt="">
+                        </div>   
+                        
+                        <div class="card">
+                            <img src="https://i1.wp.com/boingboing.net/wp-content/uploads/2020/06/person-carrying-closed-eyed-koala-2943232-scaled.jpg?fit=1&resize=620%2C4000&ssl=1" class="card-img-top" alt="">
+                        </div>   
+                    </div>
+                    
+                    <div class="card-group">
+
+                        <div class="card">
+                            <img src="https://kpbs.media.clients.ellingtoncms.com/img/photos/2014/04/17/KoalaJoey_002_LG_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d" class="card-img-top" alt="">
+                        </div> 
+
+                        <div class="card">
+                            <img src="https://s3-prod.adage.com/s3fs-public/iStock-1094806232.jpg" class="card-img-top" alt="">
+                        </div>
+                        <div class="card">
+                            <img src="https://kittenrescue.org/wp-content/uploads/2017/03/KittenRescue_KittenCareHandbook.jpg" class="card-img-top" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-group">
+
+
+                        <div class="card">
+                            <img src="https://chuckanddons.com/media/wysiwyg/kitten_blog.jpg" class="card-img-top" alt="">
+                        </div>
+
+                        <div class="card">
+                            <img src="https://owlconnected.com/wp-content/uploads/2020/09/dreamstime_s_113292865-e1601392187217.jpg" class="card-img-top" alt="">
+                        </div> 
+                        
+                        <div class="card">
+                            <img src="https://thumbs-prod.si-cdn.com/6J8x6o4CS1HIZ8PDcxmy4jXVNtE=/fit-in/1600x0/filters:focal(1501x569:1502x570)/https://public-media.si-cdn.com/filer/1e/1e/1e1e3aea-e930-45d2-9bc4-6dd50cccf66d/istock-511313058.jpg" class="card-img-top" alt="">
+                        </div> 
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    
+                    <div class="d-flex justify-content-center ">
+                        <div class="single-column-feed">
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://cdn.theatlantic.com/assets/media/img/photo/2020/03/photos-national-puppy-day-2020/p01_1490227862-1/original.jpg" class="card-img-top" />
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://images.squarespace-cdn.com/content/v1/54e8ba93e4b07c3f655b452e/1577956632296-QFYZZXB2HAQQQZML2J1E/ke17ZwdGBToddI8pDm48kFyD7pzB8zoMIVY5aiUuFlp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0jG2lbcDYBOeMi4OFSYem8DMb5PTLoEDdB05UqhYu-xbnSznFxIRsaAU-3g5IaylIg/D-013.jpg" class="card-img-top" />
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://i1.wp.com/boingboing.net/wp-content/uploads/2020/06/person-carrying-closed-eyed-koala-2943232-scaled.jpg?fit=1&resize=620%2C4000&ssl=1" class="card-img-top" />
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://kpbs.media.clients.ellingtoncms.com/img/photos/2014/04/17/KoalaJoey_002_LG_t800.jpg?90232451fbcadccc64a17de7521d859a8f88077d" class="card-img-top">
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://s3-prod.adage.com/s3fs-public/iStock-1094806232.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://kittenrescue.org/wp-content/uploads/2017/03/KittenRescue_KittenCareHandbook.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://chuckanddons.com/media/wysiwyg/kitten_blog.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://owlconnected.com/wp-content/uploads/2020/09/dreamstime_s_113292865-e1601392187217.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CARD ROW -->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card wd-70">
+                                        <div class="card-header">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>My first photo</h4>
+                                                <h4>12/4</h4>
+                                            </div>
+                                        </div>
+                                        <img src="https://thumbs-prod.si-cdn.com/6J8x6o4CS1HIZ8PDcxmy4jXVNtE=/fit-in/1600x0/filters:focal(1501x569:1502x570)/https://public-media.si-cdn.com/filer/1e/1e/1e1e3aea-e930-45d2-9bc4-6dd50cccf66d/istock-511313058.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p>23 Likes</p>
+                                            <p>
+                                                This is my first photo feed. This is a multi comment for testing purposes. I am learning to code with #BreatheCode
+                                            </p>
+                                        </div>
+                                        <div class="card-footer gray-it">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="heart-comment">
+                                                    <i class="far fa-heart"></i>
+                                                    Comment ...
+                                                </div>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                   <textarea style="width: 100%"></textarea>
+                   <div class="d-inline-flex">
+                       <span class="boxed border border-1 rounded"><i class="fas fa-camera"></i></span>
+                       <span class="boxed border border-1 rounded"><i class="fas fa-map-marker-alt"></i></span>
+                   </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" >Save changes</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+</html>
